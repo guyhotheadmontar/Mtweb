@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" type="text/css" href="css/Team.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>สอบ</title>
+    <script>
+    var user = 3 ;
+    var hd = 200;
+    var total = user*hd;
+
+    function myf(){
+        document.getElementById("user").innerHTML=user;
+        document.getElementById("hd").innerHTML=hd;
+        document.getElementById("total").innerHTML=total;
+        }
+    </script>
+    <style>
+        body{
+            background-color:rgb(235, 231, 231);
+    color:rgb(0, 0, 0);
+            
+        }
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        fieldset {
+            text-align: center;
+            width: 50%;
+            border-width: 10px;
+            border-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <center>
+            <img src="h4.png" height="150px">
+        <fieldset border="10">
+        <legend><h1>โปรเเกรมคำนวนค่าเน็ต</h1></legend>
+        <center>
+        <table >
+                    
+            <tr>
+                <td>  จำนวนคนที่ไป  </td>
+                <td>:</td>
+                <td><b id="user"></b></td>
+                <td>คน</td>
+            </tr>
+            <tr>
+                <td>  ตั๋วละ  </td>
+                <td>:</td>
+                <td width="150px"> <b id="hd"></b> </td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+            <td>  ราคารวม  </td>
+                <td>:</td>
+                <td> <b id="total"></b> </td>
+                <td>บาท</td>
+                    </tr>
+                </table></center>
+            </center>
+                </fieldset> <br>
+                <center>
+                    <input type="button" value="Enter" onclick="myf();">
+                 </center>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" type="text/css" href="css/Team.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var useUnit = 312;
+    var vatPrice = 0.07;
+    var pricePerUnit=20;
+    var totalPrice = useUnit*pricePerUnit; 
+    var Netprice = totalPrice+vatPrice;
+
+    function myf(){
+            document.getElementById("uesUnit").innerHTML=useUnit;
+            document.getElementById("pricePerUnit").innerHTML=pricePerUnit;
+            document.getElementById("vatPrice").innerHTML=vatPrice;
+            document.getElementById("Netprice").innerHTML=Netprice;
+            }
+    </script>
+    <style>
+        body{
+            background-color:rgb(235, 231, 231);
+    color:rgb(0, 0, 0);
+                
+        }
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        fieldset {
+            text-align: center;
+            width: 50%;
+            border-width: 10px;
+            border-color: chocolate;
+        }
+    </style>
+
+</head>
+<body>
+        <center><img src="cat.png" height="150px"></center>
+    <center>
+    <fieldset border="10">
+        <legend><h1>โปรเเกรมคำนวนค่าเน็ต</h1></legend>
+    <table >
+        
+        <tr>
+            <td>  เน็ตที่ใช้ไป  </td>
+            <td>:</td>
+            <td><b id="uesUnit"></b></td>
+            <td>GB</td>
+        </tr>
+        <tr>
+            <td>  ราคาต่อGB  </td>
+            <td>:</td>
+            <td width="150px"> <b id="pricePerUnit"></b> </td>
+            <td>บาท</td>
+        </tr>
+        <tr>
+            <td>  ภาษี  </td>
+            <td>:</td>
+            <td> <b id="vatPrice"></b> </td>
+            <td>บาท</td>
+        </tr>
+        <tr>
+            <td> ราคาสุทธิ </td>
+            <td>:</td>
+            <td><b id="Netprice"></b> </td>
+            <td>บาท</td>
+
+        </tr>
+    </table>
+</center>
+    </fieldset> <br>
+    <center>
+        <input type="button" value="Enter" onclick="myf();">
+     </center>
+
+</body>
+</html>

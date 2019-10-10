@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" type="text/css" href="css/Team.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>สอบ</title>
+    <script>
+    var EnterHour = 2;
+    var hour = 100;
+    var Total = hour*EnterHour;
+    var pay = 500;
+    var Change = pay-Total;
+    </script>
+    <style>
+        body{
+            background-color:rgb(235, 231, 231);
+    color:rgb(0, 0, 0);
+                
+        }
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        fieldset {
+            text-align: center;
+            width: 50%;
+            border-width: 10px;
+            border-color: chocolate;
+        }
+    </style>
+
+</head>
+<body><center>
+        <img src="h4.png" height="150px">
+    <fieldset>
+        <center><legend><h1>โปรเเกรมคำนวนค่าเรียนทำอาหาร</h1></legend>
+        <table>
+        
+            <tr>
+                <td> ชั่วโมงที่เรียน </td>
+                <td width="20px">:</td>
+                <td width="50px"><script>document.write(EnterHour)</script></td>
+                <td>ชม.</td>
+            </tr>
+            <tr>
+                <td> ชั่วโมงละ </td>
+                <td>:</td>
+                <td><script>document.write(hour)</script></td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+                <td> รวม </td>
+                <td>:</td>
+                <td><script>document.write(Total)</script></td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+                <td> จ่ายเงินมา </td>
+                <td>:</td>
+                <td><script>document.write(pay)</script></td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+                <td> เงินทอน </td>
+                <td>:</td>
+                <td><script>document.write(Change)</script></td>
+                <td>บาท</td>
+            </tr>
+
+
+
+
+        </table></center>
+    </fieldset></center>
+</body>
+</html>

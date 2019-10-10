@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/Team.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var fname="Montar";
+        var lname="Chaytaweep";
+        var tel="0951406634";
+
+        function myf(){
+            document.getElementById("fname").innerHTML=fname;
+            document.getElementById("lname").innerHTML=lname;
+            document.getElementById("tel").innerHTML=tel;
+            }
+
+    </script>
+
+    <style>
+    body{
+        background-color:rgb(235, 231, 231);
+    color:rgb(0, 0, 0);
+    }
+    h1 {
+        text-align: center;
+    }
+    fieldset {
+        text-align: center;
+        width: 30%;
+    }
+    </style>
+</head>
+<body>
+    <h1>ทดสอบสร้าง Function ภาษา Java มักเจ้าหลายเด้อ</h1>
+    <center>
+    <fieldset>
+        <legend><h1>ข้อมูลทั่วไป</h1></legend>
+        
+    <table border="0">
+    <tr>
+       <td> ชื่อ</td>
+       <td> : </td>
+       <td> <b id="fname"></b> </td>
+    </tr>
+    <tr>
+        <td>นามสกุล</td>
+        <td> : </td>
+        <td> <b id="lname"></b> </td>
+    </tr>
+    <tr>
+        <td>เบอร์โทร</td>
+        <td> : </td>
+        <td> <b id="tel"></b> </td>
+        </tr>
+     </table>
+    </center>
+     <center>
+        <input type="button" value="กะลองเบิ่ง" onclick="myf();">
+     </center>   
+</body>
+</html>

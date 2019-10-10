@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" type="text/css" href="css/Team.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var useUnit=312;
+    var vatPrice=0.07;
+    var pricePerUnit=20;
+    var totalPrice = useUnit*pricePerUnit; 
+    var Netprice = Totalprice+VatPrice;
+
+    
+    </script>
+    <style>
+        body{
+            background-color:rgb(235, 231, 231);
+    color:rgb(0, 0, 0);
+                
+        }
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        fieldset {
+            text-align: center;
+            width: 50%;
+            border-width: 10px;
+            border-color: chocolate;
+        }
+    </style>
+
+</head>
+<body>
+        <center><img src="cat.png" height="150px"></center>
+    <center>
+    <fieldset>    
+    <table border="0">
+        
+        <legend><h1>โปรเเกรมคำนวนค่าเน็ต</h1></legend>
+        <tr>
+            <td>  เน็ตที่ใช้ไป  </td>
+            <td>:</td>
+            <td width="200px"><script>document.write(useUnit);</script> </td>
+            <td>GB</td>
+        </tr>
+        <tr>
+            <td>  ราคาต่อGB  </td>
+            <td>:</td>
+            <td><script>document.write(pricePerUnit);</script> </td>
+            <td>บาท</td>
+        </tr>
+        <tr>
+            <td>  ภาษี   </td>
+            <td>:</td>
+            <td><script>document.write(vatPrice);</script> </td>
+            <td>บาท</td>
+        </tr>
+        <tr>
+            <td> ราคาสุทธิ </td>
+            <td>:</td>
+            <td><script>document.write(totalPrice+vatPrice);</script> </td>
+            <td>บาท</td>
+
+        </tr>
+    </table>
+</center>
+    </fieldset> <br>
+    
+
+</body>
+</html>
